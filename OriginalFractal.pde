@@ -16,7 +16,7 @@ public void design(int xPos, int yPos, int size, int num) {
 	else {
 		noFill();
 		strokeWeight(1);
-		stroke((int)(Math.random()*255));
+		stroke((int)(Math.random()*255), (int)(Math.random()*255), 0);
 		ellipse(xPos, yPos, size, size);
 	}
 }
