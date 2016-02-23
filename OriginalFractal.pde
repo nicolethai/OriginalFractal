@@ -5,7 +5,7 @@ public void setup() {
 
 public void draw() {
 	background(0);
-	design(width/2, height/2, 10, 100);
+	design(width/2, height/2, 100, 100);
 }
 
 public void design(int xPos, int yPos, int size, int num) {
