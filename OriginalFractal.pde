@@ -23,3 +23,20 @@ public void design(int xPos, int yPos, int size, int num) {
 		ellipse(xPos-size, yPos-size, size, size);
 	}
 }
+/*
+	int x1 = xPos, y1 = yPos,
+		x2 = xPos, y2 = yPos;
+	if(num > 0) {
+		design(x1+size, y1+size, size+1, num-1);
+		design(x2-size, y2-size, size+1, num-1);
+		// design(xPos-5, yPos-5, size+1, num-1);
+		// design(xPos-5, yPos-5, size/5, num-2);
+		// rotate(PI/3.0);
+		ellipse(x1, y1, size, size);
+		ellipse(x2, y2, size, size);
+	}
+	else {
+		ellipse(x1, y1, size, size);
+		ellipse(x2, y2, size, size);
+	}
+*/
