@@ -6,7 +6,7 @@ public void setup() {
 }
 
 public void draw() {
-  background(250, 230, 5);
+  background(255, 255, 144);
   //pen = color((int)(Math.random()*255));
   thisFractal(width/2, height/2, 500);
 }
@@ -14,7 +14,7 @@ public void draw() {
 public void thisFractal(float x, float y, float thisW) {
   if(thisW > 10) {
     noFill();
-    stroke(0, (int)(Math.random()*255), (int)(Math.random()*255));
+    stroke(255, 139, 197);
     strokeWeight(1);
     ellipse(x, y, thisW, thisW);
     thisFractal(x+thisW/4, y, thisW/2);
