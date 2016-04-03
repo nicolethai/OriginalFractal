@@ -1,4 +1,5 @@
 public int pen;
+public int nTimes = 10;
 
 public void setup() {
   size(700, 700);
@@ -9,6 +10,18 @@ public void draw() {
   background(255, 255, 144);
   //pen = color((int)(Math.random()*255));
   thisFractal(width/2, height/2, 500);
+}
+
+public void mousePressed() {
+  if(mouseButton == LEFT) {
+    nTimes--;
+  }
+  else if(mouseButton == RIGHT) {
+    nTimes++;
+  }
+  else {
+    nTimes = 10;
+  }
 }
 
 public void thisFractal(float x, float y, float thisW) {
